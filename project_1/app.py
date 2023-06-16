@@ -1,6 +1,6 @@
 # Python program to create a Bankaccount
 # with deposit , withdraw and display.
-import math
+import requests
 
 class Bank_account:
     def __init__(self):
@@ -10,12 +10,12 @@ class Bank_account:
     def deposit(self):
 
         #take the input from the user
-        amount  =  float(input("Enter the amount to be deposited: "))
+        amount=float(input("Enter the amount to be deposited: "))
         self.balance += amount
         print("\n the amount deposited:  ", amount )
 
     def withdraw(self):
-        amount  =  float(input("Enter the amount to be withdrawn: "))
+        amount=float(input("Enter the amount to be withdrawn: "))
         if self.balance >= amount:
             self.balance -=amount
             print("\n You withdrew" , amount)
