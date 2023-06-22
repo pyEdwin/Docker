@@ -13,3 +13,5 @@
 * env\Scripts\activate.bat 
 
 * pip install flask
+
+* insatll pastman
