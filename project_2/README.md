@@ -15,3 +15,11 @@
 * pip install flask
 
 * insatll pastman
+
+* Build the image
+
+> docker image build -t project_2 .30
+
+* Run the image
+
+>  docker run -p 3000:3000 -d project_2
