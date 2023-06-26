@@ -41,6 +41,7 @@
 
 * Create two images from the container
 > docker commit fef7c327ea37 web_template:v1
+
 > docker commit fef7c327ea37 web_template:v2
 
 * Delete the  web_taplate:v1 image
@@ -48,7 +49,9 @@
 
 * Run the image
 > docker run -d --name web1 -p 8081:80 web_template:v2
+
 > docker run -d --name web2 -p 8082:80 web_template:v2
+
 > docker run -d --name web3 -p 8083:80 web_template:v2
 
 * Stop a container
