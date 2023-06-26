@@ -29,3 +29,27 @@
 
 * Remove the index.html from apache
 > rm /htdocs/index.html
+
+* Remode README.md file
+> rm /temp/web_factory/README.md
+
+* Copy everything from web_factory to htdocs
+> cp -r /temp/web_factory/* htdocs/
+
+* List the files of htdocs
+> ls -l htdocs
+
+* Create two images from the container
+> docker commit fef7c327ea37 web_template:v1
+> docker commit fef7c327ea37 web_template:v2
+
+* Delete the  web_taplate:v1 image
+> docker rmi web_taplate:v1
+
+* Run the image
+> docker run -d --name web1 -p 8081:80 web_template:v2
+> docker run -d --name web2 -p 8082:80 web_template:v2
+> docker run -d --name web3 -p 8083:80 web_template:v2
+
+* Stop a container
+> docker stop w2
