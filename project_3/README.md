@@ -21,8 +21,8 @@
 * Install Git 
 > apt update && apt install git
 
-* Clone a repository to web_factory
->  git clone https://github.com/pyEdwin/web.git /temp/web_factory
+* Clone a repository to web_template
+>  git clone https://github.com/pyEdwin/web.git /temp/web_template
 
 * Check the files
 > ls -l /temp/web_factory
